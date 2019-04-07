@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 const links = [
-  { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
+  { href: 'https://rickandmortyapi.com', label: 'Rick and Morty API' }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
@@ -13,25 +13,44 @@ const Nav = () => (
     <ul>
       <li>
         <Link prefetch href="/">
-          <a>Home</a>
+          <a><i className="material-icons">first_page</i></a>
+        </Link>
+      </li>
+      <li>
+        <Link prefetch href="/">
+          <a><i className="material-icons">chevron_left</i></a>
+        </Link>
+      </li>
+      <li>
+        <Link prefetch href="/about">
+          <a>About the app</a>
         </Link>
       </li>
       <ul>
         {links.map(({ key, href, label }) => (
           <li key={key}>
-            <Link href={href}>
+            <Link href={href} target="_blank">
               <a>{label}</a>
             </Link>
           </li>
         ))}
       </ul>
+      <li>
+        <Link prefetch href="/">
+          <a><i className="material-icons">chevron_right</i></a>
+        </Link>
+      </li>
+      <li>
+        <Link prefetch href="/">
+          <a><i className="material-icons">last_page</i></a>
+        </Link>
+      </li>
     </ul>
 
     <style jsx>{`
       :global(body) {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;
       }
       nav {
         text-align: center;
