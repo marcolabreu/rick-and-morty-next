@@ -1,8 +1,6 @@
 # Rick React Next
 
-This is a [React](https://reactjs.org) app to visualize characters from Rick & Morty TV show. The data will be obtained from the [Rick and Morty API](https://rickandmortyapi.com).
-
-The project was bootstrapped with [Next.JS](https://nextjs.org), a static generator framework, for easy deployment on [Netlify](https://www.netlify.com) and [Now](https://zeit.co/now), as a serverless lambda function.
+This is a [React](https://reactjs.org) app to visualize characters from Rick & Morty TV show. The project was bootstrapped with [NextJS](https://nextjs.org), a React static generator framework, for easy deployment on [Netlify](https://www.netlify.com) and [Now](https://zeit.co/now). Both can automatically build and deploy NextJS sites. Data will be obtained from the [Rick and Morty API](https://rickandmortyapi.com).
 
 The initial requirements very simple:
 * display the characters with pagination;
