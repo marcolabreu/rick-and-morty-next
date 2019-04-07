@@ -1,10 +1,9 @@
 {
   "version": 2,
   "alias": [
-    "next-morty.now.sh",
-    "rick-reacts.now.sh"
+    "next-morty.now.sh"
   ],
-  "name": "rick-react-next",
+  "name": "rick-and-morty-next",
   "builds": [{
       "src": "next.config.js",
       "use": "@now/next"
