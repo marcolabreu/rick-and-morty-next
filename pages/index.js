@@ -5,66 +5,57 @@ import Nav from '../components/nav'
 
 const Home = () => (
   <div>
-    <Head title="Home" />
+    <Head title="Rick & Morty Characters" />
     <Nav />
 
-    <div className="hero">
-      <h1 className="title">Welcome to Next!</h1>
-      <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
+    <div className="page">
+      <h1 className="title">Rick and Morty Characters</h1>
 
       <div className="row">
-        <Link href="https://github.com/zeit/next.js#getting-started">
+        <Link href="#">
           <a className="card">
-            <h3>Getting Started &rarr;</h3>
-            <p>Learn more about Next on Github and in their examples</p>
+            <h3>Rick</h3>
+            <p>Some info</p>
           </a>
         </Link>
-        <Link href="https://open.segment.com/create-next-app">
+        <Link href="#">
           <a className="card">
-            <h3>Examples &rarr;</h3>
-            <p>
-              Find other example boilerplates on the{' '}
-              <code>create-next-app</code> site
-            </p>
+            <h3>Morty</h3>
+            <p>Some info</p>
           </a>
         </Link>
-        <Link href="https://github.com/segmentio/create-next-app">
+        <Link href="#">
           <a className="card">
-            <h3>Create Next App &rarr;</h3>
-            <p>Was this tool helpful? Let us know how we can improve it</p>
+            <h3>Beth</h3>
+            <p>Some info</p>
           </a>
         </Link>
       </div>
     </div>
 
     <style jsx>{`
-      .hero {
+      .page {
         width: 100%;
         color: #333;
       }
       .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
+        margin: auto;
+        width: 80%;
+        padding-top: 1%;
         line-height: 1.15;
         font-size: 48px;
       }
-      .title,
-      .description {
-        text-align: center;
-      }
       .row {
-        max-width: 880px;
+        max-width: 1000px;
         margin: 80px auto 40px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
       }
       .card {
         padding: 18px 18px 24px;
-        width: 220px;
+        width: 240px;
         text-align: left;
         text-decoration: none;
         color: #434343;
