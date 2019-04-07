@@ -1,7 +1,8 @@
 {
   "version": 2,
   "alias": [
-    "next-morty.now.sh"
+    "next-morty.now.sh",
+    "rick-and-morty-next.abreu.now.sh"
   ],
   "name": "rick-and-morty-next",
   "builds": [{
